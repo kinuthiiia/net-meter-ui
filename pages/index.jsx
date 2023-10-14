@@ -37,7 +37,7 @@ const Dashboard = () => {
   return (
     <div className="bg-[#161719] max-h-screen overflow-hidden relative pt-12">
       <div className="h-[520px]">
-        <div className="relative mt-24">
+        <div className="relative mt-12">
           <hr className="rotate-90 w-[80px] absolute top-[60px]" />
           <div className="absolute top-[-60px] left-[20px]">
             <Text color="green" fz={"2rem"}>
