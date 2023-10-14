@@ -37,38 +37,46 @@ const Dashboard = () => {
   return (
     <div className="bg-[#161719] max-h-screen overflow-hidden relative pt-12">
       <div className="h-[520px]">
-        <div className="relative mt-12">
+        <div className="relative mt-8">
           <hr className="rotate-90 w-[80px] absolute top-[60px]" />
           <div className="absolute top-[-60px] left-[20px]">
-            <Text color="green" fz={"2rem"}>
+            <Text color="green" fz={"1.5rem"}>
               4.0 kW
             </Text>
-            <Text fw="lighter">SOLAR PROD.</Text>
+            <Text fw="lighter" fz="sm">
+              SOLAR PROD.
+            </Text>
           </div>
 
-          <hr className="rotate-90 w-[150px] absolute top-[125px] left-[120px]" />
+          <hr className="rotate-90 w-[150px] absolute top-[125px] left-[160px]" />
           <div className="absolute top-[-30px] left-[190px]">
-            <Text color="orange" fz={"2rem"}>
+            <Text color="orange" fz={"1.5rem"}>
               2.0 kW
             </Text>
-            <Text fw="lighter">HOME USAGE</Text>
+            <Text fw="lighter" fz="sm">
+              HOME USAGE
+            </Text>
           </div>
 
           <div className="absolute top-[280px] left-[220px]">
-            <Text color="white" fz={"2rem"}>
+            <Text color="white" fz={"1.5rem"}>
               2.0 kW
             </Text>
-            <Text fw="lighter">TO GRID </Text>
+            <Text fw="lighter" fz="sm">
+              TO GRID{" "}
+            </Text>
           </div>
 
-          <div className="absolute top-[290px] left-[30px]">
-            <Text color="blue" fz={"2rem"}>
+          <div className="absolute top-[270px] left-[20px]">
+            <Text color="blue" fz={"1.5rem"}>
               2.0 kWh
             </Text>
             <Text fw="lighter">
               <strong className="text-green-600">80%</strong> capacity
             </Text>
-            <Text fw="lighter">BATTERY</Text>
+            <Text fw="lighter" fz="sm">
+              BATTERY
+            </Text>
           </div>
 
           <Image src={myGif} alt="my gif" height={"60vh"} className="w-4/5" />
