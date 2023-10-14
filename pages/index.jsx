@@ -1,6 +1,6 @@
 import Image from "next/image";
 import myGif from "../public/solaronly.gif";
-import { Badge, Text } from "@mantine/core";
+import { Badge, Card, Text } from "@mantine/core";
 
 import dynamic from "next/dynamic";
 
@@ -33,17 +33,8 @@ const Fullpage = () => (
 
 const Dashboard = () => {
   return (
-    <div>
-      <div className="bg-[#161719] h-screen w-full">
-        <div className="flex w-full p-8 ">
-          <div>
-            <h1 className="text-white">Smart Net-meter</h1>
-            <Badge variant="light" color="green">
-              OFF GRID
-            </Badge>
-          </div>
-        </div>
-
+    <div className="bg-[#161719] h-screen w-full">
+      <div>
         <div className="relative mt-24">
           <hr className="rotate-90 w-[80px] absolute top-[60px]" />
           <div className="absolute top-[-60px] left-[20px]">
@@ -83,14 +74,26 @@ const Dashboard = () => {
           <Image src={myGif} alt="my gif" height={500} width={500} />
         </div>
       </div>
+      <Card
+        shadow="sm"
+        padding="lg"
+        radius="md"
+        w={"90%"}
+        style={{ margin: "auto", bottom: 12 }}
+      >
+        <div className="flex">
+          <h1 className="text-green-500">+ 1.54 kW</h1>
+          <span className="ml-3 mt-3">net energy yesterday</span>
+        </div>
+      </Card>
     </div>
   );
 };
 
 const Analytics = () => {
   return (
-    <div>
-      <h1 className="ml-4 mb-4">Analytics</h1>
+    <div className="bg-[#161719] h-screen w-full">
+      <h1 className="ml-4 mb-4 mt-8 text-white">Analytics</h1>
 
       <DynamicAreaChart data={[0, 0, 5, 22, 27, 0, 0]} />
     </div>
