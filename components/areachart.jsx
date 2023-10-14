@@ -66,5 +66,5 @@ export default function AreaChart({ data }) {
     };
     setOption(chartOptions);
   }, []);
-  return <ReactECharts style={{ height: "65vh" }} option={option} />;
+  return <ReactECharts style={{ height: "55vh" }} option={option} />;
 }
