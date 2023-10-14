@@ -35,7 +35,7 @@ const Fullpage = () => (
 
 const Dashboard = () => {
   return (
-    <div className="bg-[#161719] h-screen relative pt-36">
+    <div className="bg-[#161719] h-screen relative pt-12">
       <div className="relative">
         <hr className="rotate-90 w-[80px] absolute top-[60px]" />
         <div className="absolute top-[-60px] left-[20px]">
