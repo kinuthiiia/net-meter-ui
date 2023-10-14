@@ -42,27 +42,27 @@ const Dashboard = () => {
           <Text color="green" fz={"2rem"}>
             4.0 kW
           </Text>
-          <Text fw="lighter">SOLAR PRODUCTION</Text>
+          <Text fw="lighter">SOLAR PROD.</Text>
         </div>
 
-        <hr className="rotate-90 w-[200px] absolute top-[150px] left-[170px]" />
-        <div className="absolute top-[-30px] left-[220px]">
+        <hr className="rotate-90 w-[150px] absolute top-[125px] left-[120px]" />
+        <div className="absolute top-[-30px] left-[190px]">
           <Text color="orange" fz={"2rem"}>
             2.0 kW
           </Text>
           <Text fw="lighter">HOME USAGE</Text>
         </div>
 
-        <hr className="rotate-90 w-[50px] absolute top-[362px] left-[230px]" />
-        <div className="absolute top-[390px] left-[220px]">
+        <hr className="rotate-90 w-[50px] absolute top-[310px] left-[230px]" />
+        <div className="absolute top-[340px] left-[220px]">
           <Text color="white" fz={"2rem"}>
             2.0 kW
           </Text>
           <Text fw="lighter">TO GRID </Text>
         </div>
 
-        <hr className="rotate-90 w-[80px] absolute top-[360px] left-[50px]" />
-        <div className="absolute top-[400px] left-[60px]">
+        <hr className="rotate-90 w-[80px] absolute top-[300px] left-[50px]" />
+        <div className="absolute top-[340px] left-[60px]">
           <Text color="blue" fz={"2rem"}>
             2.0 kWh
           </Text>
@@ -72,7 +72,7 @@ const Dashboard = () => {
           <Text fw="lighter">BATTERY</Text>
         </div>
 
-        <Image src={myGif} alt="my gif" height={500} width={500} />
+        <Image src={myGif} alt="my gif" height={"60vh"} className="w-4/5" />
       </div>
 
       <Card
