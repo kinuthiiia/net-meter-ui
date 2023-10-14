@@ -1,8 +1,7 @@
 import Image from "next/image";
 import myGif from "../public/solaronly.gif";
-import { Avatar, Badge, Text } from "@mantine/core";
-import { DatePickerInput } from "@mantine/dates";
-import { useState } from "react";
+import { Badge, Text } from "@mantine/core";
+
 import dynamic from "next/dynamic";
 
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -24,10 +23,7 @@ const Fullpage = () => (
             <Analytics />
           </div>
           <div className="section">
-            <Notifications />
-          </div>
-          <div className="section">
-            <Settings />
+            <History />
           </div>
         </ReactFullpage.Wrapper>
       );
@@ -36,34 +32,17 @@ const Fullpage = () => (
 );
 
 const Dashboard = () => {
-  const [range, setRange] = useState([null, null]);
-
   return (
     <div>
       <div className="bg-[#161719] h-screen w-full">
-        <div className="flex w-full p-8 justify-between">
+        <div className="flex w-full p-8 ">
           <div>
-            <h1 className="text-white">Shagz</h1>
+            <h1 className="text-white">Smart Net-meter</h1>
             <Badge variant="light" color="green">
               OFF GRID
             </Badge>
           </div>
-
-          <Avatar size={40} color="green">
-            SK
-          </Avatar>
         </div>
-
-        <DatePickerInput
-          type="range"
-          label="Period (default today) "
-          placeholder="Pick dates range"
-          value={range}
-          onChange={setRange}
-          mx="auto"
-          className="w-4/5"
-          maw={400}
-        />
 
         <div className="relative mt-24">
           <hr className="rotate-90 w-[80px] absolute top-[60px]" />
@@ -111,18 +90,15 @@ const Dashboard = () => {
 const Analytics = () => {
   return (
     <div>
-      <h1 className="ml-4">Analytics</h1>
+      <h1 className="ml-4 mb-4">Analytics</h1>
+
       <DynamicAreaChart data={[0, 0, 5, 22, 27, 0, 0]} />
     </div>
   );
 };
 
-const Notifications = () => {
-  return <div>notifications</div>;
-};
-
-const Settings = () => {
-  return <div>settings</div>;
+const History = () => {
+  return <div>History</div>;
 };
 
 export default function Home() {
