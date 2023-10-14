@@ -35,44 +35,46 @@ const Fullpage = () => (
 
 const Dashboard = () => {
   return (
-    <div className="bg-[#161719] h-screen relative pt-12">
-      <div className="relative">
-        <hr className="rotate-90 w-[80px] absolute top-[60px]" />
-        <div className="absolute top-[-60px] left-[20px]">
-          <Text color="green" fz={"2rem"}>
-            4.0 kW
-          </Text>
-          <Text fw="lighter">SOLAR PROD.</Text>
-        </div>
+    <div className="bg-[#161719] max-h-screen overflow-hidden relative pt-12">
+      <div className="h-[520px]">
+        <div className="relative mt-24">
+          <hr className="rotate-90 w-[80px] absolute top-[60px]" />
+          <div className="absolute top-[-60px] left-[20px]">
+            <Text color="green" fz={"2rem"}>
+              4.0 kW
+            </Text>
+            <Text fw="lighter">SOLAR PROD.</Text>
+          </div>
 
-        <hr className="rotate-90 w-[150px] absolute top-[125px] left-[120px]" />
-        <div className="absolute top-[-30px] left-[190px]">
-          <Text color="orange" fz={"2rem"}>
-            2.0 kW
-          </Text>
-          <Text fw="lighter">HOME USAGE</Text>
-        </div>
+          <hr className="rotate-90 w-[150px] absolute top-[125px] left-[120px]" />
+          <div className="absolute top-[-30px] left-[190px]">
+            <Text color="orange" fz={"2rem"}>
+              2.0 kW
+            </Text>
+            <Text fw="lighter">HOME USAGE</Text>
+          </div>
 
-        <hr className="rotate-90 w-[50px] absolute top-[310px] left-[230px]" />
-        <div className="absolute top-[340px] left-[220px]">
-          <Text color="white" fz={"2rem"}>
-            2.0 kW
-          </Text>
-          <Text fw="lighter">TO GRID </Text>
-        </div>
+          <hr className="rotate-90 w-[50px] absolute top-[310px] left-[230px]" />
+          <div className="absolute top-[340px] left-[220px]">
+            <Text color="white" fz={"2rem"}>
+              2.0 kW
+            </Text>
+            <Text fw="lighter">TO GRID </Text>
+          </div>
 
-        <hr className="rotate-90 w-[80px] absolute top-[300px] left-[50px]" />
-        <div className="absolute top-[340px] left-[60px]">
-          <Text color="blue" fz={"2rem"}>
-            2.0 kWh
-          </Text>
-          <Text fw="lighter">
-            <strong className="text-green-600">80%</strong> capacity
-          </Text>
-          <Text fw="lighter">BATTERY</Text>
-        </div>
+          <hr className="rotate-90 w-[80px] absolute top-[300px] left-[50px]" />
+          <div className="absolute top-[340px] left-[60px]">
+            <Text color="blue" fz={"2rem"}>
+              2.0 kWh
+            </Text>
+            <Text fw="lighter">
+              <strong className="text-green-600">80%</strong> capacity
+            </Text>
+            <Text fw="lighter">BATTERY</Text>
+          </div>
 
-        <Image src={myGif} alt="my gif" height={"60vh"} className="w-4/5" />
+          <Image src={myGif} alt="my gif" height={"60vh"} className="w-4/5" />
+        </div>
       </div>
 
       <Card
